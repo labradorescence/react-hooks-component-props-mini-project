@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function About({blog}) { //object destructuring
+export default function About({image="https://via.placeholder.com/215", about}) { //object destructuring
   return (
    <aside>
-    {blog.image===undefined?<img src = "https://via.placeholder.com/215" alt="blog logo"/>:<img src = {blog.image} alt="blog logo"/>}
-    <p>{blog.about}</p>
+    <img src={image} alt="blog logo"/>
+    <p>{about}</p>
    </aside>
   )
 }
