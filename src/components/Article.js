@@ -11,7 +11,7 @@ function getEmoji (minute){
         emojires += emoji
     }
 
-    console.log(emojires)
+    //console.log(emojires)
     return emojires
 }
 
